@@ -4,7 +4,7 @@
     <record id="view_product_ribbon_form" model="ir.ui.view">
         <field name="name">product.ribbon.form.badges</field>
         <field name="model">product.ribbon</field>
-        <field name="inherit_id" ref="website_sale.product_ribbon_view_form"/>
+        <field name="inherit_id" ref="website_sale.product_ribbon_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='new_period']" position="after">
                 <field name="bestseller_min_qty"
@@ -12,11 +12,13 @@
                 <field name="low_stock_qty"
                        invisible="assign != 'low_stock'"/>
             </xpath>
-            <xpath expr="//header" position="inside">
-                <button name="action_apply_auto_rules" type="object"
-                        string="Apply Rule Now"
-                        class="btn-primary"
-                        invisible="assign not in ('bestseller', 'low_stock')"/>
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="action_apply_auto_rules" type="object"
+                            string="Apply Rule Now"
+                            class="btn-primary"
+                            invisible="assign not in ('bestseller', 'low_stock')"/>
+                </header>
             </xpath>
         </field>
     </record>
