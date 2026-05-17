@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="ribbon_new" model="product.ribbon">
+        <field name="name">NEW</field>
+        <field name="bg_color">#28a745</field>
+        <field name="text_color">#ffffff</field>
+        <field name="position">left</field>
+        <field name="style">ribbon</field>
+        <field name="assign">new</field>
+        <field name="new_period">30</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="ribbon_sale" model="product.ribbon">
+        <field name="name">SALE</field>
+        <field name="bg_color">#dc3545</field>
+        <field name="text_color">#ffffff</field>
+        <field name="position">left</field>
+        <field name="style">ribbon</field>
+        <field name="assign">sale</field>
+        <field name="sequence">2</field>
+    </record>
+
+    <record id="ribbon_hot" model="product.ribbon">
+        <field name="name">HOT</field>
+        <field name="bg_color">#fd7e14</field>
+        <field name="text_color">#ffffff</field>
+        <field name="position">right</field>
+        <field name="style">tag</field>
+        <field name="assign">manual</field>
+        <field name="sequence">3</field>
+    </record>
+
+    <record id="ribbon_bestseller" model="product.ribbon">
+        <field name="name">BESTSELLER</field>
+        <field name="bg_color">#6c3fc5</field>
+        <field name="text_color">#ffffff</field>
+        <field name="position">left</field>
+        <field name="style">ribbon</field>
+        <field name="assign">bestseller</field>
+        <field name="bestseller_min_qty">10</field>
+        <field name="sequence">4</field>
+    </record>
+
+    <record id="ribbon_low_stock" model="product.ribbon">
+        <field name="name">LOW STOCK</field>
+        <field name="bg_color">#ffc107</field>
+        <field name="text_color">#000000</field>
+        <field name="position">right</field>
+        <field name="style">tag</field>
+        <field name="assign">low_stock</field>
+        <field name="low_stock_qty">5</field>
+        <field name="sequence">5</field>
+    </record>
+
+    <record id="ribbon_featured" model="product.ribbon">
+        <field name="name">FEATURED</field>
+        <field name="bg_color">#1a1a5e</field>
+        <field name="text_color">#ffffff</field>
+        <field name="position">right</field>
+        <field name="style">tag</field>
+        <field name="assign">featured</field>
+        <field name="sequence">6</field>
+    </record>
+
+</odoo>
