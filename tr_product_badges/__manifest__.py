@@ -4,7 +4,7 @@
     'category': 'Website/eCommerce',
     'summary': 'Advanced product badges: New, Sale, Hot, Bestseller, Low Stock with auto-assign rules',
     'description': """
-Product Badges & Ribbons Pro — by Technical Rajni
+Product Badges & Ribbons Pro — by Vayu Sharma
 ==================================================
 Extend Odoo's built-in ribbons with powerful auto-assign rules.
 
@@ -20,8 +20,8 @@ Features:
 - One-click apply all auto rules
 - Scheduled auto-update cron job
     """,
-    'author': 'Technical Rajni',
-    'website': 'https://www.technicalrajni.com',
+    'author': 'Vayu Sharma',
+    'website': '',
     'license': 'OPL-1',
     'depends': ['website_sale'],
     'data': [
